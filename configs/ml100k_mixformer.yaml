@@ -1,0 +1,39 @@
+dataset:
+  processed_path: data/processed/ml-100k.pkl
+
+model:
+  max_seq_len: 50
+  num_heads: 8
+  head_dim: 64
+  num_layers: 3
+  dropout: 0.1
+  ffn_multiplier: 4.0
+  enable_ui_decoupling: false
+  num_user_heads: 4
+  non_seq_embedding_dims:
+    user_id: 32
+    gender: 8
+    age: 16
+    occupation: 16
+    item_id: 64
+    genre: 32
+    hour: 16
+    weekday: 8
+  seq_embedding_dims:
+    rating: 8
+    position: 16
+
+training:
+  seed: 42
+  batch_size: 128
+  eval_batch_size: 64
+  num_workers: 0
+  epochs: 3
+  lr: 0.001
+  weight_decay: 0.0
+  grad_clip: 1.0
+  negative_ratio: 1
+  eval_negatives: 100
+  top_k: 10
+  device: auto
+  output_dir: outputs/ml100k_mixformer

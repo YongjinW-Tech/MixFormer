@@ -1,0 +1,5 @@
+torch>=2.2
+PyYAML>=6.0
+tqdm>=4.66
+pandas>=1.5
+numpy>=1.23

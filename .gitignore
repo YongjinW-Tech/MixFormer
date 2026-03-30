@@ -1,0 +1,25 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+.env/
+
+# Data
+/data/
+
+# Python cache directories
+__pycache__/
+
+# Output files
+outputs/
+results/
+*.log
+
+
+# Local documentation and reference materials
+docs/
+*.pdf
+*.doc
+*.docx
+*.ppt
+*.pptx
